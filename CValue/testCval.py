@@ -47,7 +47,7 @@ CValue_threshold=0.2
 
 #os.chdir('C:\\Users\\thoma')
 
-candidate = candidate = dict([(key, []) for key in range(2,L+1)])
+candidate  = dict([(key, []) for key in range(2,L+1)])
 nblignes=len(f)
 nb=0
 for sentence in f:
@@ -147,9 +147,8 @@ for l in reversed(range(2,L+1)):
                                                             
 Term.sort(key=lambda x: x.CValue, reverse=True)
 print("cval: ",len(Term))
-print("cval: ",Term[-1].CValue)
 
-print("cval: ",Term[0].CValue)
+
 print("cval: ",Term[0].CValue)
 
 print("cval: ",Term[0].words)
@@ -157,4 +156,9 @@ print("cval: ",Term[0].words)
 score=[]
 for i in range(0,len(Term)-1):
     score.append([" ".join(Term[i].words),Term[i].CValue])
+    
+#score contient les tuples (label,score), trié dans l'ordre décroissant du score. 
+#C'est la variable à retourner
+print(score)
+
     
