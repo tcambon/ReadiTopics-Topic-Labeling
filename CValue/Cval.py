@@ -27,8 +27,18 @@ pre = ['IN']#tags of preposition
 
 
 def cvalue(data,lingui_filter,L,freq_threshold,CValue_threshold):
-    """cvalue(list candidate, lingui_filter, expected maximum length of a term, 
-    freq_threshold, CValue_threshold) """
+
+        """Compute the C-value.
+
+    Keyword arguments:
+    data -- the list of the candidate term
+    lingui_filter -- the linguistic filter ex : 'AdjPrepNoun', 'AdjNoun'
+    L -- the expected maximum length of a term
+    freq_threshold --  the frequency treshold ex: 0.2
+    CValue_threshold -- the Cvalue treshold ex: 0.2
+    """
+ 
+    
     
     candidate  = dict([(key, []) for key in range(2,L+1)])
     nblignes=len(f)
