@@ -11,14 +11,14 @@ Some Python Library Requirements
 
 Sample File:
 =====
-data.txt
+* data.txt
 
 Candidate:
 * nounPhraseCora.txt 
 * nounPhraseDBLP.txt
 
 Candidate tagged :
-NounPhraseWiki02tag.txt
+* NounPhraseWiki02tag.txt
 
 
 How to compute LDA
