@@ -8,7 +8,6 @@ as in :
 Some Python Library Requirements
 ============
 * Numpy
-* Pandas
 
 Sample File:
 =====
