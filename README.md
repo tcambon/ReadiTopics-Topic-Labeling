@@ -17,6 +17,10 @@ Candidate:
 * nounPhraseCora.txt 
 * nounPhraseDBLP.txt
 
+Candidate tagged :
+NounPhraseWiki02tag.txt
+
+
 How to compute LDA
 ========
 
